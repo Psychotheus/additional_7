@@ -134,7 +134,7 @@ class Sudoku {
         if (numbers[a] == 1) {
           let [b, c] = lastIndex[a];
           let [i, j] = segments[b][c].indices;
-          
+
           this.matrix[i][j] = a;
           changed = true;
         }
@@ -185,7 +185,6 @@ class Sudoku {
       this.findHiddenSingle();
     }
     
-    console.log(this.matrix);
     return this.matrix;
   }
 
